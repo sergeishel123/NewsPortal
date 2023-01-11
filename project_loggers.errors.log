@@ -1,0 +1,234 @@
+2022-12-05 17:06:57,177 - ERROR - Internal Server Error: /news/ - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\log.py - (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Unclosed tag on line 94: 'for'. Looking for one of: empty, endfor."), <traceback object at 0x0000028D9D17C840>)
+Traceback (most recent call last):
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 854, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 518, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 94: 'for'. Looking for one of: empty, endfor.
+2022-12-05 17:06:57,199 - ERROR - "GET /news/ HTTP/1.1" 500 161239 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-05 17:08:01,555 - ERROR - Internal Server Error: /news/ - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\log.py - (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Unclosed tag on line 94: 'for'. Looking for one of: empty, endfor."), <traceback object at 0x000001F83E706B40>)
+Traceback (most recent call last):
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 854, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 518, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 94: 'for'. Looking for one of: empty, endfor.
+2022-12-05 17:08:01,581 - ERROR - "GET /news/ HTTP/1.1" 500 160934 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-05 17:27:24,777 - ERROR - Internal Server Error: /news/ - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\log.py - (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Unclosed tag on line 94: 'for'. Looking for one of: empty, endfor."), <traceback object at 0x0000017A3302ADC0>)
+Traceback (most recent call last):
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 854, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 518, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 94: 'for'. Looking for one of: empty, endfor.
+2022-12-05 17:27:24,828 - ERROR - "GET /news/ HTTP/1.1" 500 161302 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-05 17:28:46,182 - ERROR - Internal Server Error: /news/ - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\utils\log.py - (<class 'django.template.exceptions.TemplateSyntaxError'>, TemplateSyntaxError("Unclosed tag on line 22: 'block'. Looking for one of: endblock."), <traceback object at 0x0000017A33088480>)
+Traceback (most recent call last):
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 518, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 22: 'block'. Looking for one of: endblock.
+2022-12-05 17:28:46,204 - ERROR - "GET /news/ HTTP/1.1" 500 157003 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-06 07:16:33,667 - ERROR - "POST /news/create HTTP/1.1" 500 104772 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-06 08:48:37,718 - ERROR - "GET /news/ HTTP/1.1" 500 159501 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-06 09:00:51,692 - ERROR - "GET /news/ HTTP/1.1" 500 159634 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-06 09:03:05,357 - ERROR - "GET /news/ HTTP/1.1" 500 159504 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-06 09:16:44,049 - ERROR - "GET /news/ HTTP/1.1" 500 159700 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-06 09:19:41,514 - ERROR - "GET /news/ HTTP/1.1" 500 159564 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-06 10:22:08,800 - ERROR - "GET /news/ HTTP/1.1" 500 159979 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-06 10:25:17,417 - ERROR - "GET /news/ HTTP/1.1" 500 159848 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-16 07:14:30,490 - ERROR - You're accessing the development server over HTTPS, but it only supports HTTP.
+ - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-16 07:14:30,492 - ERROR - You're accessing the development server over HTTPS, but it only supports HTTP.
+ - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-16 07:14:49,161 - ERROR - You're accessing the development server over HTTPS, but it only supports HTTP.
+ - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-16 07:14:49,161 - ERROR - You're accessing the development server over HTTPS, but it only supports HTTP.
+ - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-16 07:14:49,163 - ERROR - You're accessing the development server over HTTPS, but it only supports HTTP.
+ - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-16 07:14:49,164 - ERROR - You're accessing the development server over HTTPS, but it only supports HTTP.
+ - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-16 07:14:53,649 - ERROR - You're accessing the development server over HTTPS, but it only supports HTTP.
+ - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-16 07:14:53,651 - ERROR - You're accessing the development server over HTTPS, but it only supports HTTP.
+ - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-16 07:14:56,998 - ERROR - You're accessing the development server over HTTPS, but it only supports HTTP.
+ - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-16 07:14:56,999 - ERROR - You're accessing the development server over HTTPS, but it only supports HTTP.
+ - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-16 07:14:57,001 - ERROR - You're accessing the development server over HTTPS, but it only supports HTTP.
+ - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-16 07:14:57,001 - ERROR - You're accessing the development server over HTTPS, but it only supports HTTP.
+ - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-17 06:35:46,450 - ERROR - "GET /news/index/ HTTP/1.1" 500 131747 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-18 11:28:38,930 - ERROR - "GET /news/index/ HTTP/1.1" 500 132661 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-18 11:28:39,684 - ERROR - "GET /news/index/ HTTP/1.1" 500 132310 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-18 11:29:17,892 - ERROR - "GET /news/index/ HTTP/1.1" 500 133094 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-18 11:32:21,884 - ERROR - "GET /news/index/ HTTP/1.1" 500 166443 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-18 11:57:00,274 - ERROR - "GET /news/ HTTP/1.1" 500 159825 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-19 14:07:21,631 - ERROR - "GET /news/index/ HTTP/1.1" 500 184472 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-19 14:07:57,802 - ERROR - "GET /news/index/ HTTP/1.1" 500 81331 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-19 16:56:56,853 - ERROR - "GET /articles/index/ HTTP/1.1" 500 171074 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-20 17:33:20,582 - ERROR - "GET /news/index/ HTTP/1.1" 500 176101 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-20 17:33:47,402 - ERROR - "GET /news/index/ HTTP/1.1" 500 176238 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-20 17:33:48,332 - ERROR - "GET /news/index/ HTTP/1.1" 500 176238 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-20 17:37:03,738 - ERROR - "GET /news/index/ HTTP/1.1" 500 208812 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-20 17:37:18,696 - ERROR - "GET /news/index/ HTTP/1.1" 500 210038 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-20 17:37:19,352 - ERROR - "GET /news/index/ HTTP/1.1" 500 210038 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-20 17:37:19,576 - ERROR - "GET /news/index/ HTTP/1.1" 500 210038 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-20 17:42:56,938 - ERROR - "GET /news/index/ HTTP/1.1" 500 203839 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-20 17:43:10,314 - ERROR - "GET /news/index/ HTTP/1.1" 500 199057 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-20 17:43:33,735 - ERROR - "GET /news/index/ HTTP/1.1" 500 203843 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-20 17:43:34,640 - ERROR - "GET /news/index/ HTTP/1.1" 500 203843 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-20 17:43:54,505 - ERROR - "GET /news/index/ HTTP/1.1" 500 203858 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-20 17:44:10,982 - ERROR - "GET /news/index/ HTTP/1.1" 500 198995 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-20 17:47:18,959 - ERROR - "POST /news/index/ HTTP/1.1" 500 97966 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-20 18:12:30,506 - ERROR - "GET /articles/index/ HTTP/1.1" 500 208760 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-20 18:12:50,412 - ERROR - "GET /articles/index/ HTTP/1.1" 500 206048 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-20 18:18:52,068 - ERROR - "GET /news/search HTTP/1.1" 500 140575 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-20 18:19:03,376 - ERROR - "GET /news/search HTTP/1.1" 500 141284 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-20 18:19:03,967 - ERROR - "GET /news/search HTTP/1.1" 500 141284 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-25 06:04:33,884 - ERROR - "GET /news/swagger-ui/ HTTP/1.1" 500 85606 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-27 05:17:08,308 - ERROR - "GET /articles/2 HTTP/1.1" 500 147186 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-28 04:09:08,607 - ERROR - "GET /articles/5 HTTP/1.1" 500 175330 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-28 04:09:41,987 - ERROR - "GET /articles/5 HTTP/1.1" 500 148339 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-28 04:11:41,541 - ERROR - "GET /articles/5 HTTP/1.1" 500 176986 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-29 09:45:49,067 - ERROR - "GET /news/2/update HTTP/1.1" 500 166287 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-29 09:46:10,037 - ERROR - "GET /news/2/update HTTP/1.1" 500 166384 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-29 09:46:11,088 - ERROR - "GET /news/2/update HTTP/1.1" 500 166384 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-29 09:49:39,706 - ERROR - "GET /articles/2/update HTTP/1.1" 500 99079 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-29 10:20:54,791 - ERROR - "GET /news/2/update HTTP/1.1" 500 93594 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-29 10:24:34,572 - ERROR - "GET /news/2/update HTTP/1.1" 500 112789 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-29 10:29:07,228 - ERROR - "GET /news/2/update HTTP/1.1" 500 101352 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-29 10:29:39,870 - ERROR - "GET /news/2/update HTTP/1.1" 500 101362 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-29 10:32:44,786 - ERROR - "GET /news/2/update HTTP/1.1" 500 112219 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-29 11:38:49,929 - ERROR - "GET /news/2/update HTTP/1.1" 500 112186 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-29 11:41:35,397 - ERROR - "GET /news/2/update HTTP/1.1" 500 89312 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-29 11:41:47,914 - ERROR - "GET /news/2/update HTTP/1.1" 500 89324 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-29 11:54:06,195 - ERROR - "GET /news/2/update HTTP/1.1" 500 93913 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-29 11:55:13,728 - ERROR - "GET /news/2/update HTTP/1.1" 500 98523 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-29 11:55:26,435 - ERROR - "GET /news/2/update HTTP/1.1" 500 98523 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2022-12-29 11:57:51,806 - ERROR - "GET /news/2/update HTTP/1.1" 500 163448 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None
+2023-01-10 16:59:02,163 - ERROR - "GET /news/ HTTP/1.1" 500 179083 - C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\servers\basehttp.py - None

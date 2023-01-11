@@ -1,0 +1,154 @@
+{% include 'flatpages/default.html' %}
+{% load custom_filters %}
+{% load custom_tags %}
+{% load cache %}
+{% load i18n %}
+{% load tz %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page title</title>
+    <style>
+        body {background-color: {% if current_time.hour >= 19 or current_time.hour <= 7 %} grey
+        {% else %} powderblue
+        {% endif %};}
+    </style>
+</head>
+<body>
+    <form action="{% url 'set_language' %}" method="POST"> {% csrf_token %} <!-- Не забываем по csrf_token для POST-запросов -->
+        <input type="hidden" name="next" value="{{ redirect_to }}">
+
+        <select name="language" id="">
+            {% get_available_languages as LANGUAGES %} <!-- получаем языки -->
+            {% get_language_info_list for LANGUAGES as languages %} <!-- Помещаем их в список languages -->
+
+            {% for language in languages %} <!-- Итерируясь по списку, выводим их название на языке пользователя и код -->
+                <option value="{{ language.code }}" selected  >
+                    {{ language.name_local }} - {{ language.code }}
+                </option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="set">
+    </form>
+
+{% get_current_timezone as TIME_ZONE %}
+
+<form action = "" method = Post>
+    {% csrf_token %}
+    <label for = '"timezone'>Time zone</label>
+    <select name = 'timezone'>
+        {% for tz in timezones %}
+        <option value = '{{tz}}' {% if tz == TIME_ZONE %} selected {% endif %} >{{tz}}</option>
+        {% endfor %}
+    </select>
+    <input type = "submit" value = 'Set'>
+</form>
+
+{{TIME_ZONE}}
+    <p></p>
+{{current_time}}
+
+{% for post in Posts %}
+    <p>
+    {{ post.text|censor}}
+{% endfor %}
+
+</body>
+</html>
+{% cache 60 * 30 title %}
+    {% block title %}
+    <h3>
+    <center>НОВОСТИ</center>
+    </h3>
+    <p></p>
+    <p></p>
+    <h5>
+        {% trans 'Количество новостей' %}: {{posts|length}}
+    </h5>
+    <p></p>
+    <p></p>
+    {% endblock title %}
+{% endcache %}
+
+
+{% block content %}
+
+{% cache 60 * 100 %}
+    <hr>
+    <h4>
+        <table>
+            <tr>
+                <td>
+                    Заголовок
+                </td>
+                <td>
+                    Дата публикации
+                </td>
+                <td>
+                    Текст
+                </td>
+            </tr>{% endcache %}
+                {% for post in posts %}
+                <tr class = '{% cycle "blue" "white" %}'><td>
+                    {{post.heading|censor}}
+                </td>
+                <td>
+                    {{post.time_in|date:'d M Y'}}
+                </td>
+                <td>
+                    {{post.text|censor|truncatewords:10}}
+                </td>
+                    <td>
+                        <a href = "{{post.get_absolute_url}}" style = "color:lilac">Читать больше</a>
+                    </td>
+                </tr>
+                {% empty %}
+                    Новостей нет!
+                {% endfor %}
+        </table>
+    </h4>
+
+<center>
+    {% if page_obj.has_previous %}
+       {# Для каждой ссылки пагинации указываем обработку через новый тег #}
+       <a href="?{% url_replace page=1 %}"><button>First</button></a>
+       {% if page_obj.previous_page_number != 1 %}
+           ...
+    <a href="?{% url_replace page=page_obj.previous_page_number %}"><button>{{ page_obj.previous_page_number }}</button></a>
+       {% endif %}
+   {% endif %}
+
+   {{ page_obj.number }}
+
+   {% if page_obj.has_next %}
+    <a href="?{% url_replace page=page_obj.next_page_number %}"><button>{{ page_obj.next_page_number }}</button></a>
+       {% if paginator.num_pages != page_obj.next_page_number %}
+           ...
+           <a href="?{% url_replace page=page_obj.paginator.num_pages %}"><button>Last</button></a>
+       {% endif %}
+   {% endif %}
+</center>
+
+Пользователь <i><h4>{{user.username}}</h4></i>
+
+{% if is_not_author %}
+<p>
+    <button><a href = 'be/'>Стать автором</a></button>
+</p>
+{% else %}
+<center>
+<p>
+    <button><a href = "{% url 'post_create' %}">Добавить новость</a></button>
+</p>
+
+</center>
+{% endif %}
+
+{% endblock content %}
+
+
+
+
+

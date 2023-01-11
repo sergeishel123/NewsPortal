@@ -1,0 +1,58 @@
+{% include 'flatpages/default.html' %}
+{% load custom_filters %}
+{% load cache %}
+{% load i18n %}
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page title</title>
+</head>
+ <style>
+        body {background-color: {% if current_time.hour >= 19 or current_time.hour <= 7 %} grey
+        {% else %} powderblue
+        {% endif %};}
+    </style>
+{% block title %}
+<center>
+    <h3>
+        {{post.heading|censor}}
+    </h3>
+</center>
+
+
+{% endblock title %}
+<form action="{% url 'set_language' %}" method="POST"> {% csrf_token %} <!-- Не забываем по csrf_token для POST-запросов -->
+        <input type="hidden" name="next" value="{{ redirect_to }}">
+
+        <select name="language" id="">
+            {% get_available_languages as LANGUAGES %} <!-- получаем языки -->
+            {% get_language_info_list for LANGUAGES as languages %} <!-- Помещаем их в список languages -->
+
+            {% for language in languages %} <!-- Итерируясь по списку, выводим их название на языке пользователя и код -->
+                <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %} selected {% endif %} >
+                    {{ language.name_local }} - {{ language.code }}
+                </option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="set">
+    </form>
+
+{% block content %}
+<body>
+<h4>{{post.text|censor}}</h4>
+{% cache 60 number %}
+<h5>Дата публикации: {{post.time_in|date:'d M Y'}}</h5>
+</body>
+</html>
+{% endcache %}
+{% endblock content %}
+
+
+
+<center>
+    <button><a href = '/news'>Вернуться к списку статей</a></button>
+</center>

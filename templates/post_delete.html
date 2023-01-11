@@ -1,0 +1,14 @@
+{% include 'flatpages/default.html' %}
+<style>
+    body {background-color: powderblue }
+</style>
+{% block content %}
+<h1>Удаление товара</h1>
+<hr>
+<form action="" method="post">
+    {% csrf_token %}
+    <p>Удаляем "{{ object}}"?</p>
+    <input type="submit" value="Delete" />
+</form>
+{% endblock content %}
+

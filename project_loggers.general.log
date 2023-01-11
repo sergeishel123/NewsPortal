@@ -1,0 +1,520 @@
+2022-12-04 16:58:46,487 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-04 16:58:47,746 - INFO - basehttp - "GET / HTTP/1.1" 200 179
+2022-12-04 16:58:49,807 - INFO - basehttp - "GET /admin/ HTTP/1.1" 302 0
+2022-12-04 16:58:49,856 - INFO - basehttp - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2215
+2022-12-04 16:58:49,974 - WARNING - basehttp - "GET /asc HTTP/1.1" 404 2575
+2022-12-04 17:01:02,833 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-04 17:04:11,786 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-04 17:04:24,673 - INFO - basehttp - "GET / HTTP/1.1" 200 179
+2022-12-04 17:04:30,340 - WARNING - basehttp - "GET /ewf HTTP/1.1" 404 2575
+2022-12-04 17:05:34,900 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-04 17:06:54,052 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-04 17:06:56,865 - INFO - basehttp - "GET / HTTP/1.1" 200 179
+2022-12-04 17:06:58,567 - WARNING - basehttp - "GET /wefwe HTTP/1.1" 404 2581
+2022-12-05 16:57:37,866 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-05 17:04:30,031 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-05 17:04:30,647 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-05 17:04:40,617 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-05 17:04:41,808 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-05 17:05:03,301 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-05 17:05:08,029 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-05 17:07:50,103 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-05 17:07:51,241 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-05 17:08:01,555 - ERROR - log - Internal Server Error: /news/
+Traceback (most recent call last):
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 854, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 518, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 94: 'for'. Looking for one of: empty, endfor.
+2022-12-05 17:08:01,581 - ERROR - basehttp - "GET /news/ HTTP/1.1" 500 160934
+2022-12-05 17:23:55,990 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-05 17:23:57,130 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-05 17:24:05,902 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-05 17:25:13,213 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-05 17:27:12,305 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-05 17:27:13,430 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-05 17:27:22,317 - WARNING - basehttp - "GET /qwd HTTP/1.1" 404 2575
+2022-12-05 17:27:24,777 - ERROR - log - Internal Server Error: /news/
+Traceback (most recent call last):
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 854, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 518, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 94: 'for'. Looking for one of: empty, endfor.
+2022-12-05 17:27:24,828 - ERROR - basehttp - "GET /news/ HTTP/1.1" 500 161302
+2022-12-05 17:28:46,182 - ERROR - log - Internal Server Error: /news/
+Traceback (most recent call last):
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 518, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 22: 'block'. Looking for one of: endblock.
+2022-12-05 17:28:46,204 - ERROR - basehttp - "GET /news/ HTTP/1.1" 500 157003
+2022-12-05 17:34:39,535 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-05 17:38:10,227 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-05 17:40:19,504 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-05 17:40:20,176 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-05 17:41:09,736 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-05 17:41:10,361 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-05 17:41:43,195 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-05 17:41:49,124 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-05 17:41:56,024 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-05 17:41:56,708 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-05 17:42:33,817 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-06 05:51:56,884 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-06 05:52:09,945 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-06 05:52:10,392 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-06 05:52:28,730 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-06 05:52:29,339 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-06 05:52:35,091 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-06 05:52:35,724 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-06 06:03:43,341 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-06 06:03:44,548 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-06 06:03:59,195 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-06 06:40:57,945 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-06 06:41:05,828 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-06 06:41:06,884 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-06 06:41:26,180 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-06 07:08:26,576 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-06 07:10:04,049 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-06 07:10:05,300 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-06 07:10:32,818 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 2599
+2022-12-06 07:11:09,678 - WARNING - log - Forbidden (CSRF token missing.): /news/create
+2022-12-06 07:11:09,679 - WARNING - basehttp - "POST /news/create HTTP/1.1" 403 2506
+2022-12-06 07:13:11,606 - WARNING - log - Forbidden (CSRF token missing.): /news/create
+2022-12-06 07:13:11,607 - WARNING - basehttp - "POST /news/create HTTP/1.1" 403 2506
+2022-12-06 07:13:15,340 - WARNING - log - Forbidden (CSRF token missing.): /news/create
+2022-12-06 07:13:15,342 - WARNING - basehttp - "POST /news/create HTTP/1.1" 403 2506
+2022-12-06 07:13:30,964 - WARNING - log - Forbidden (CSRF token missing.): /news/create
+2022-12-06 07:13:30,966 - WARNING - basehttp - "POST /news/create HTTP/1.1" 403 2506
+2022-12-06 07:14:18,107 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-06 07:14:19,259 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-06 07:14:20,530 - WARNING - log - Forbidden (CSRF token missing.): /news/create
+2022-12-06 07:14:20,532 - WARNING - basehttp - "POST /news/create HTTP/1.1" 403 2506
+2022-12-06 07:16:04,293 - WARNING - log - Forbidden (CSRF token missing.): /news/create
+2022-12-06 07:16:04,295 - WARNING - basehttp - "POST /news/create HTTP/1.1" 403 2506
+2022-12-06 07:16:19,452 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-06 07:16:33,643 - ERROR - log - Internal Server Error: /news/create
+Traceback (most recent call last):
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\generic\base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\contrib\auth\mixins.py", line 109, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\views\generic\base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\agave\Project_NEWS_PORTAL\MyProject\NewsPortal\views.py", line 128, in post
+    Categor = Category.objects.get(name=name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 496, in get
+    raise self.model.DoesNotExist(
+NewsPortal.models.Category.DoesNotExist: Category matching query does not exist.
+2022-12-06 07:16:33,667 - ERROR - basehttp - "POST /news/create HTTP/1.1" 500 104772
+2022-12-06 07:47:18,623 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-06 07:47:19,752 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-06 07:48:14,789 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-06 07:51:09,698 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-06 07:51:28,816 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-06 07:51:29,920 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-06 08:26:30,577 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-06 08:27:12,247 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-06 08:44:28,204 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-06 08:44:45,643 - WARNING - basehttp - "GET /32 HTTP/1.1" 404 2572
+2022-12-06 08:45:09,864 - WARNING - basehttp - "GET /news/3 HTTP/1.1" 404 2617
+2022-12-06 08:47:17,751 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-06 08:47:26,770 - WARNING - log - Forbidden (CSRF token missing.): /news/create
+2022-12-06 08:47:26,771 - WARNING - basehttp - "POST /news/create HTTP/1.1" 403 2506
+2022-12-06 08:48:13,218 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-06 08:48:34,334 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-06 08:48:37,687 - ERROR - log - Internal Server Error: /news/
+Traceback (most recent call last):
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 954, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 518, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 89: 'if'. Looking for one of: elif, else, endif.
+2022-12-06 08:48:37,718 - ERROR - basehttp - "GET /news/ HTTP/1.1" 500 159501
+2022-12-06 08:55:03,486 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-06 08:55:04,901 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-06 08:58:50,004 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-06 08:58:51,124 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-06 09:00:51,673 - ERROR - log - Internal Server Error: /news/
+Traceback (most recent call last):
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 954, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 518, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 89: 'if'. Looking for one of: elif, else, endif.
+2022-12-06 09:00:51,692 - ERROR - basehttp - "GET /news/ HTTP/1.1" 500 159634
+2022-12-06 09:01:23,740 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-06 09:03:05,329 - ERROR - log - Internal Server Error: /news/
+Traceback (most recent call last):
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 954, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 518, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 89: 'if'. Looking for one of: elif, else, endif.
+2022-12-06 09:03:05,357 - ERROR - basehttp - "GET /news/ HTTP/1.1" 500 159504
+2022-12-06 09:16:39,777 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-06 09:16:42,820 - ERROR - log - Internal Server Error: /news/
+Traceback (most recent call last):
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 954, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 518, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 89: 'if'. Looking for one of: elif, else, endif.
+2022-12-06 09:16:44,049 - ERROR - basehttp - "GET /news/ HTTP/1.1" 500 159700
+2022-12-06 09:18:38,189 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-06 09:18:39,351 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-06 09:19:29,233 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-06 09:19:30,345 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-06 09:19:34,851 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-06 09:19:39,955 - ERROR - log - Internal Server Error: /news/
+Traceback (most recent call last):
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 954, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 518, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 89: 'if'. Looking for one of: elif, else, endif.
+2022-12-06 09:19:41,514 - ERROR - basehttp - "GET /news/ HTTP/1.1" 500 159564
+2022-12-06 09:23:48,435 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-06 09:24:34,126 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-06 09:25:43,714 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-06 10:25:13,852 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-06 10:25:17,410 - ERROR - log - Internal Server Error: /news/
+Traceback (most recent call last):
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 954, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 518, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Users\agave\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 89: 'if'. Looking for one of: elif, else, endif.
+2022-12-06 10:25:17,417 - ERROR - basehttp - "GET /news/ HTTP/1.1" 500 159848
+2022-12-06 10:26:02,284 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-07 13:21:24,431 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-07 13:21:30,213 - WARNING - basehttp - "GET /create HTTP/1.1" 404 179
+2022-12-07 13:21:50,379 - WARNING - basehttp - "GET /news/2/szfds HTTP/1.1" 404 179
+2022-12-07 13:21:53,960 - WARNING - basehttp - "GET /news/2iewfw HTTP/1.1" 404 179
+2022-12-07 13:21:58,677 - WARNING - basehttp - "GET /news/2222 HTTP/1.1" 404 179
+2022-12-07 13:22:24,761 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-07 13:22:25,900 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-07 13:22:26,160 - WARNING - log - Not Found: /news/2222
+2022-12-07 13:22:26,160 - WARNING - basehttp - "GET /news/2222 HTTP/1.1" 404 179
+2022-12-07 13:22:37,419 - WARNING - log - Not Found: /23R23
+2022-12-07 13:22:37,419 - WARNING - basehttp - "GET /23R23 HTTP/1.1" 404 179
+2022-12-11 05:38:31,851 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-11 05:38:52,071 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-11 05:38:53,231 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-11 05:44:51,424 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-11 05:44:52,558 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-12 12:51:58,728 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-12 12:52:24,904 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-12 12:52:26,137 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-12 12:52:35,145 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-12 12:53:08,607 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-12 12:53:28,943 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-12 12:53:38,233 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-15 13:39:19,799 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-15 13:39:22,247 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 179
+2022-12-15 13:39:25,136 - WARNING - basehttp - "GET /static/css/styles.css HTTP/1.1" 404 179
+2022-12-15 13:39:26,396 - WARNING - basehttp - "GET /newsa HTTP/1.1" 404 179
+2022-12-15 13:39:28,174 - WARNING - basehttp - "GET /newss HTTP/1.1" 404 179
+2022-12-15 13:39:44,278 - WARNING - basehttp - "GET /static/css/styles.css HTTP/1.1" 404 179
+2022-12-15 13:40:46,230 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-15 13:40:51,981 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-15 13:40:53,198 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-15 13:41:36,139 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-15 13:41:39,981 - WARNING - basehttp - "GET /static/css/styles.css HTTP/1.1" 404 179
+2022-12-15 13:41:41,753 - WARNING - basehttp - "GET /static/css/styles.css HTTP/1.1" 404 179
+2022-12-15 13:41:42,997 - WARNING - basehttp - "GET /static/css/styles.css HTTP/1.1" 404 179
+2022-12-15 13:41:44,239 - WARNING - basehttp - "GET /static/css/styles.css HTTP/1.1" 404 179
+2022-12-15 13:42:55,461 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-15 13:42:56,627 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-15 13:42:58,746 - WARNING - basehttp - "GET /static/css/styles.css HTTP/1.1" 404 179
+2022-12-15 13:45:47,645 - WARNING - basehttp - "GET /1 HTTP/1.1" 404 179
+2022-12-15 13:45:50,768 - WARNING - basehttp - "GET /static/css/styles.css HTTP/1.1" 404 179
+2022-12-15 13:47:11,740 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-15 13:47:13,300 - WARNING - basehttp - "GET /static/css/styles.css HTTP/1.1" 404 179
+2022-12-15 13:47:16,656 - WARNING - basehttp - "GET /static/css/styles.css HTTP/1.1" 404 179
+2022-12-15 13:47:20,280 - WARNING - basehttp - "GET /static/css/styles.css HTTP/1.1" 404 179
+2022-12-15 13:47:24,748 - WARNING - basehttp - "GET /news/2/delete' HTTP/1.1" 404 179
+2022-12-15 13:47:32,352 - WARNING - basehttp - "GET /static/css/styles.css HTTP/1.1" 404 179
+2022-12-15 13:48:59,211 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.
+2022-12-15 13:49:00,342 - INFO - autoreload - Watching for file changes with StatReloader
+2022-12-15 13:49:16,910 - INFO - autoreload - C:\Users\agave\Project_NEWS_PORTAL\MyProject\MyProject\settings.py changed, reloading.

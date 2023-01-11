@@ -1,0 +1,19 @@
+{% include 'flatpages/default.html' %}
+<style>
+    body {background-color: powderblue }
+</style>
+{% block content %}
+
+{% if is_author %}
+<h1>Создание/редактирование поста</h1>
+<hr>
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Сохранить" />
+</form>
+{% else %}
+<h3>Вы не обладаете правами редактирования данного поста, поскольку не являетесь его автором!</h3>
+{% endif %}
+{% endblock content %}
+

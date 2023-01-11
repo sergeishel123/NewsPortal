@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Title</title>
+</head>
+<body>
+Здравствуй, {{User.username}}!
+Последние новости за эту неделю:
+{% for Post in Posts %}
+    <h4>
+        <a href ="http://127.0.0.1:8000{{Post.get_absolute_url}}">{{Post.heading}}</a>
+    </h4>
+{% endfor %}
+</body>
+</html>
+
+{
